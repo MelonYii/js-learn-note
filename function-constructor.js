@@ -1,5 +1,6 @@
 (function() {
     'use strict';
+    //JavaScript的实例化与继承 原文 http://www.infoq.com/cn/articles/javascript-instantiation-and-inheritance
     var Class = function(name) {
         this.name = name || 'jack';
     };

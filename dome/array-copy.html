@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array-copy</title>
+</head>
+<body>
+
+<script>
+    var arr = [1,2,3,4];
+    var Arr = Array.prototype.push.apply(arr,arr);
+    function log(msg) {
+        var ARR = [1,23,5,6];
+        var arr = Array.prototype.slice.apply(ARR);
+        arr.unshift('(app)');
+        arr[1] = '123123';
+        console.log(arr);
+        console.log(ARR);
+        console.log.apply(console,arr);
+    }
+    log(123,345);
+</script>
+</body>
+</html>

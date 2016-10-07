@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Declaration vs Expression</title>
+</head>
+<body>
+
+<script>
+    var sayHello;
+    console.log(typeof (sayHey)); //=>function
+    console.log(typeof (sayHo)); //=>undefined
+    if (true) {
+        function sayHey() {
+            console.log("sayHey");
+        }
+        sayHello = function sayHo() {
+            console.log("sayHello");
+        }
+    } else {
+        function sayHey() {
+            console.log("sayHey2");
+        }
+        sayHello = function sayHo() {
+            console.log("sayHello2");
+        }
+    }
+    sayHey(); // => sayHey2
+    sayHello(); // => sayHello
+</script>
+</body>
+</html>

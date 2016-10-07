@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*function log() {
+     console.log.apply(console,arguments);
+     }
+     log(typeof (console));*/
+    var hello = {
+        a: 123
+    };
+    a = 2;
+    function hi() {
+        console.log(this.a + 123);
+    }
+    hi.apply(hello);
+    hi.bind(hello)();
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<script>
+    // 'use strict';
+    function foo(){
+        var a = 2 ;
+        this.bar.call(foo);
+    }
+    foo.a=787878;
+
+    function bar(){
+        console.log(this.a);
+        console.log(this);
+    }
+
+    foo();
+</script>

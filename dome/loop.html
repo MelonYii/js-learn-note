@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript loop only use last value</title>
+</head>
+<body>
+<script>
+
+    /*	function dome(i){
+     return function(){
+     console.log(i);
+     console.log(ii);
+     };
+     }
+
+     for (var i = 0; i < 10; i++) {
+     setTimeout(dome(i), 1000);
+     }*/
+
+
+    /*    for (var i = 0; i < 10; i++) {
+     (function (ii) {
+     setTimeout(function () {
+     console.log(i);
+     console.log(ii);
+     }, 1000);
+     }(i));
+     }*/
+
+
+    // function consoleLog(i) {
+    //     console.log(i);
+    // }
+    // for (var i = 0; i < 10; i++) {
+    //     setTimeout(consoleLog.bind(this, i), 1000);
+    // }
+    // for (let i = 0;i<10;i++){
+    //     setTimeout(()=>console.log(i),1000);
+    // }
+    for (var i = 0;i<10;i++){
+        (function(j){
+            setTimeout(()=>console.log(j),1000);
+        })(i)
+    }
+</script>
+</body>
+</html>
